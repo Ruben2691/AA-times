@@ -1,1 +1,33 @@
 /* Your code here */
+.masthead {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.icons {
+    display: inline;
+}
+.little {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.date{
+grid-column: 1;
+grid-row: 3;
+}
+
+.logo{
+grid-column: 2;
+grid-row: 3;
+}
+
+.paper {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.action {
+    grid-column: 3;
+    grid-row: 1;
+}
