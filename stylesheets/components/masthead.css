@@ -5,8 +5,17 @@
     grid-template-rows: repeat(3,1fr);
 }
 .icons {
-    display: inline;
+    display: inline-block;
+    font-size: 11px;
+    padding: 7px 9px 7px 9px;
+    transition: 0.3s;
+    padding-left: 20px;
 }
+
+.icons:hover {
+    background-color: lightgray;
+}
+
 .little {
     grid-column: 2;
     grid-row: 2;
@@ -27,7 +36,20 @@ grid-row: 3;
     grid-row: 3;
 }
 
-.action {
+.action-buttons {
     grid-column: 3;
     grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+}
+
+.CSS, .HTML, .Python, .JavaScript {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: darkgray;
+    margin: 7px;
+    position: relative;
+    left: 20px;
 }
